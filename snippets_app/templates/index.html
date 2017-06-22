@@ -6,7 +6,20 @@
 </head>
 <body>
 
-Here you will find your favourite snippets, man!
+<h1>Snippets</h1>
+
+<ul>
+
+{% for snippet in snippets %}
+    <li>
+        <strong>{{ snippet.language }}</strong>
+        <p>
+            <code>{{ snippet.code }}</code>
+        </p>
+    </li>
+{% endfor %}
+</ul>
+
 
 </body>
 </html>
